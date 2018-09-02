@@ -2,7 +2,7 @@ This PowerShell Script is written to clean Dotnet Core publish directory. Issue 
 https://github.com/aspnet/websdk/issues/179. It is also explained under blog post at 
 https://mohitgoyal.co/2018/08/30/publishing-dotnet-core-creates-multiples-nested-directories/. As part of the design process, there is no
 inbuilt dotnet clean command or --clean parameter which can be used to make sure that publish directory does not contain anything else. 
-This can create issues in a continuous build or intergration process. This script is written to help with th same. 
+This can create issues in a continuous build or intergration process. This script is written to help with the same. 
 
 This script can be invoked in the following manner:
 
