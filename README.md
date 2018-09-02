@@ -8,6 +8,7 @@ This script can be invoked in the following manner:
 
 .\dotnet-clean.ps1 -directory "publish" -workingdirectory "C:\vsts\_work\"
 
-The script will check if the $workingdirectory is a valid one or not. In case it is not valid, it will proceed to execute in the current
-workspace. For most of the agents, this should be replaced by current context of the build workspace.
+The script will check if the $workingdirectory is a valid one or not. It will check for all instances of $directory inside the context of
+the $workingdirectory and removes them along with any files contained in them. In case it is not valid, it will proceed to execute in the
+current workspace. For most of the agents, this should be replaced by current context of the build workspace.
 
